@@ -50,3 +50,16 @@ xdotool type $DATE
 #then add key and set the key you want, like home key and set this script to run. next time when you will 
 #hit home key, it will write current date and time in word
 #you can also use this in any other application like notepad, libreoffice, etc.
+
+
+Type bash script output in any desktop app
+You can use xdotool key Return to press enter. set the keyboard shortcut key and it will work in same way in
+all editors not only in ms word.
+
+#!/bin/bash
+
+sleep 1
+xdotool type "Hy Kashan from Bash Script"
+#this will press enter
+xdotool key Return 
+xdotool type "This is from Kashan Moin"
