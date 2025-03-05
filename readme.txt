@@ -72,3 +72,30 @@ xdotool type "This is from Kashan Moin"
 Keyboard Macros
 you need to install X macro and download the scripts. then you can record your key presses anywhere.
 notify-send is used to send notification.
+
+
+
+Mouse Macros
+for mouse macros, record and replay means what we will do it will save in a file and then if we play that 
+file, the thing we do with our mouse will exactly do again by itself. 
+
+install cnee. this is only for x11 system so make sure you are using that system. 
+sudo apt-get cnee. to install it. 
+
+cnee --record -o events.xnr --mouse.
+--record to record, -o to output our file and events.xnr is file name in which recording will be saved. 
+--mouse means we want to record the mouse. 
+write this command in terminal and it will start recording our file. ctrl +c to stop recording mouse. 
+
+cnee --replay -o events.xnr --mouse. it will do what exactly we did. like if we opened calculator and do some
+calculation, it will open calculator and do the same thing.
+
+to record both keyboard and mouse use
+cnee --record -o events.xnr --keyboard --mouse.
+then cnee --replay -f events.xnr. to run.  
+So it does the outputs exactly the same, but it doesn't know exactly what it is you're doing.
+
+So if you change your desktop environments or close Windows or stuff like that, if you don't start
+with exactly the same scene as in the beginning, what will happen is that things go messed up.
+So you want to always start from the same starting point from the same desktop.
+Otherwise, things can get messed up.
