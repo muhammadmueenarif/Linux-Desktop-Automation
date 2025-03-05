@@ -46,6 +46,8 @@ xdotool type "Date:"
 xdotool key space
 xdotool type $DATE
 
+
+open setting and in setting, goto keyboard option to add custom keyboard shortcut. 
 #we can set it to keyboard shortcut. see setting and keyboard shortcut in your application like ms word 
 #then add key and set the key you want, like home key and set this script to run. next time when you will 
 #hit home key, it will write current date and time in word
@@ -53,6 +55,8 @@ xdotool type $DATE
 
 
 Type bash script output in any desktop app
+open setting and in setting, goto keyboard option to add custom keyboard shortcut. 
+
 You can use xdotool key Return to press enter. set the keyboard shortcut key and it will work in same way in
 all editors not only in ms word.
 
@@ -63,3 +67,8 @@ xdotool type "Hy Kashan from Bash Script"
 #this will press enter
 xdotool key Return 
 xdotool type "This is from Kashan Moin"
+
+
+Keyboard Macros
+you need to install X macro and download the scripts. then you can record your key presses anywhere.
+notify-send is used to send notification.
